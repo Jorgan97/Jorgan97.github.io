@@ -1,12 +1,12 @@
-// class Project {
-//     constructor(title, subtitle, description, tags) {
-//         this.title = title;
-//         this.subtitle = subtitle;
-//         this.description = description;
-//         this.tags = tags;
-//     }
-// }
+main();
+
 async function populate() {
-    const requestURL = "https://github.com/Jorgan97/J.-Morgan-Project-Portfolio/blob/521d4b2e6663935ef587b3ddb73673604a16493b/projects.json";
-    
+    const requestURL = "https://github.com/Jorgan97/Jorgan97.github.io/blob/11729ed1f19991c97925614425f5b81274105ded/Projects.json";
+    $.getJSON(requestURL, function(json) {
+        console.log(json);
+    });
+}
+
+function main() {
+    populate();
 }
