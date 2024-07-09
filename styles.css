@@ -125,6 +125,14 @@ h1 {
 .scrollArrow:hover {
     animation: enlarge 4s;
 }
+.projTitle {
+    padding-top:0;
+    margin-top:0;
+    font-size: 20pt;
+}
+.projSub {
+    margin-bottom:10px;
+}
 
 @keyframes fadeIn {
     0% {opacity: 0;}
