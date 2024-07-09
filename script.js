@@ -1,10 +1,9 @@
 main();
 
 async function populate() {
-    const requestURL = "https://github.com/Jorgan97/Jorgan97.github.io/blob/11729ed1f19991c97925614425f5b81274105ded/Projects.json";
-    $.getJSON(requestURL, function(json) {
-        console.log(json);
-    });
+    fetch("Projects.json")
+    .then(response => response.json())
+    .then(jsonResponse => console.log(jsonResponse))
 }
 
 function main() {
