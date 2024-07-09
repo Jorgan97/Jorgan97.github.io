@@ -2,14 +2,24 @@
     "airCompreesor": {
         "title": "4Runner Onboard Air",
         "subtitle": "Convenient air supply for filling tires, suspension airbags, and more...",
-        "discussion": "No description yet...",
+        "discussion": "",
+        "thumbnail": "",
         "images": [],
         "tags": ["engineering", "automotive", "fabrication", "overland"]
+    },
+    "catalina22": {
+        "title": "Catalina 22 Sailboat",
+        "subtitle": "Sailboat restoration project",
+        "discussion": "",
+        "thumbnail": "",
+        "images": [],
+        "tags": ["engineering", "marine", "fabrication", "camping"]
     },
     "template": {
         "title": "",
         "subtitle": "",
         "discussion": "",
+        "thumbnail": "",
         "images": [],
         "tags": []
     }
