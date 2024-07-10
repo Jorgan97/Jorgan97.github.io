@@ -20,5 +20,16 @@ function createObjects(jsonResponse) {
 }
 function listProjects() {
     const projTable = document.querySelector("#projectTable");
-    projects.forEach((i) => projTable.innerHTML += `<tr class="projListing"><p class="projTitle">${i["title"]}</p><p class="projSub">${i["subtitle"]}</p></tr>`);
+    projects.forEach((project) => {
+        const titleHTML = `<p class="projTitle">${project.title}</p>`
+        const subHTML = `<p class="projSub">${project.subtitle}</p>`
+        let thumbHTML = null;
+        if (project.thumbnail.length == 0) {
+            thumbHTML = '<img src="ProjectPics/noImage.png" class="thumbnail">'
+        } else {
+            thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`
+        }
+        projTable.innerHTML += `<tr class="projListing">${titleHTML + subHTML + thumbHTML}</tr>`
+    
+    });
 }
