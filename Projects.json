@@ -5,6 +5,7 @@
         "discussion": "",
         "thumbnail": "",
         "images": [],
+        "subprojects": [],
         "tags": ["engineering", "automotive", "fabrication", "overland"]
     },
     "catalina22": {
@@ -13,7 +14,8 @@
         "discussion": "",
         "thumbnail": "c22Wing.jpg",
         "images": [],
-        "tags": ["engineering", "marine", "fabrication", "camping"]
+        "subprojects": [],
+        "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintainence"]
     },
     "template": {
         "title": "",
@@ -21,6 +23,7 @@
         "discussion": "",
         "thumbnail": "",
         "images": [],
+        "subprojects": [],
         "tags": []
     }
 }
