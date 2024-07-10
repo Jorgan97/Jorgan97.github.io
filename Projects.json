@@ -1,5 +1,6 @@
 {
     "airCompreesor": {
+        "id": "airCompressor",
         "title": "4Runner Onboard Air",
         "subtitle": "Convenient air supply for filling tires, suspension airbags, and more...",
         "discussion": "",
@@ -9,8 +10,9 @@
         "tags": ["engineering", "automotive", "fabrication", "overland"]
     },
     "catalina22": {
+        "id" : "catalina",
         "title": "Catalina 22 Sailboat Restoration",
-        "subtitle": "Sailboat restoration project...",
+        "subtitle": "Overnight camper sailor that needed a refresh...",
         "discussion": "",
         "thumbnail": "c22Wing.jpg",
         "images": [],
@@ -18,6 +20,7 @@
         "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintainence"]
     },
     "template": {
+        "id": "",
         "title": "",
         "subtitle": "",
         "discussion": "",

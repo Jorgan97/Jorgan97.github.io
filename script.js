@@ -23,20 +23,20 @@ function createObjects(jsonResponse) {
 }
 // List the projects using HTML
 function listProjects() {
-    const projTable = document.querySelector("#projectTable");
+    const projList = document.querySelector("#projectList");
     projects.forEach((project) => {
-        const titleHTML = `<p class="projTitle">${project.title}</p>`
-        const subHTML = `<p class="projSub">${project.subtitle}</p>`
+        // Create project content
+        const titleHTML = `<p class="projTitle">${project.title}</p>`;
+        const subHTML = `<p class="projSub">${project.subtitle}</p>`;
         let thumbHTML = null;
-
-        // Check if a thumbnail image is defined
         if (project.thumbnail.length == 0) {
-            thumbHTML = '<img src="ProjectPics/noImage.png" class="thumbnail">'
+            thumbHTML = '<img src="ProjectPics/noImage.png" class="thumbnail">';
         } else {
-            thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`
+            thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`;
         }
-        // Add a table row of HTML
-        projTable.innerHTML += `<tr class="projListing">${titleHTML + subHTML + thumbHTML}</tr>`
-    
+
+        projList.innerHTML += `<li class="projectItem" id="${project.id}"></li>`;
+        const projItem = document.querySelector(`#${project.id}`);
+        projItem.innerHTML += titleHTML + subHTML + thumbHTML;
     });
 }
