@@ -1,28 +1,42 @@
 {
-    "airCompreesor": {
-        "id": "airCompressor",
-        "title": "4Runner Onboard Air",
-        "subtitle": "Convenient air supply for filling tires, suspension airbags, and more...",
+    "4Runner": {
+        "id": "runner",
+        "title": "'08 4th Gen Toyota 4Runner",
+        "subtitle": "A practical, reliable, offroad capable, daily driver for beach driving, boat hauling, and more...",
+        "date" : "June, 2024",
         "discussion": "",
-        "thumbnail": "",
+        "thumbnail": "runner.jpg",
         "images": [],
         "subprojects": [],
         "tags": ["engineering", "automotive", "fabrication", "overland"]
     },
     "catalina22": {
         "id" : "catalina",
-        "title": "Catalina 22 Sailboat Restoration",
-        "subtitle": "Overnight camper sailor that needed a refresh...",
+        "title": "'81 Catalina 22 Sailboat",
+        "subtitle": "An overnighting cruising sailboat, pruchased with dreams of camping, needed a refresh...",
+        "date" : "July, 2024",
         "discussion": "",
         "thumbnail": "c22Wing.jpg",
         "images": [],
         "subprojects": [],
         "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintainence"]
     },
+    "floater": {
+        "id": "floater",
+        "title": "'84 Chaparal 204 Powerboat",
+        "subtitle": "Repaired, rewired, and updated an old boat for use on the sounds of the Outer Banks...",
+        "date" : "",
+        "discussion": "",
+        "thumbnail": "floater.jpg",
+        "images": [],
+        "subprojects": [],
+        "tags": []
+    },
     "template": {
         "id": "",
         "title": "",
         "subtitle": "",
+        "date" : "",
         "discussion": "",
         "thumbnail": "",
         "images": [],

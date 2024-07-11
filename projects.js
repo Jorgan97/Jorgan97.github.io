@@ -30,7 +30,7 @@ function listProjects() {
         const subHTML = `<p class="projSub">${project.subtitle}</p>`;
         let thumbHTML = null;
         if (project.thumbnail.length == 0) {
-            thumbHTML = '<img src="ProjectPics/noImage.png" class="thumbnail">';
+            thumbHTML = '<img src="images/noImage.png" class="thumbnail">';
         } else {
             thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`;
         }
