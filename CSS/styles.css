@@ -47,6 +47,9 @@ body::-webkit-scrollbar {
     margin:30px auto auto auto;
     display:block;
 }
+.welcomeTable {
+    margin-bottom: 50px;
+}
 td {
     padding-right: 60px;
     padding-left: 60px;
