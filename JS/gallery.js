@@ -7,7 +7,7 @@ function main() {
 
 async function loadImgs() {
     // Load the projects from serverside JSON
-    fetch("imgList.json")
+    fetch("JSON/imgList.json")
     .then(response => response.json())
     .then(jsonResponse => {
         images = jsonResponse.images;
