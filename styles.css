@@ -27,6 +27,7 @@ body::-webkit-scrollbar {
     top: 0px;
     width: 100%;
     margin: 0px;
+    z-index: 9999;
 }
 .navBtn {
     font-size: 12pt;
@@ -134,27 +135,49 @@ h1 {
 }
 .projectItem {
     text-align: left;
-    margin: 0 20px 60px 20px;
+    margin: 15px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    transition: 0.5s;
+}
+.projectList :hover {
+    transform: scale(1.05);
+    transform-origin: center;
+}
+.projectItem :hover {
+    transform: scale(1);
+    transform-origin: center;
 }
 .projTitle {
-    width:500px;
+    font-weight:600;
+    width:475px;
     padding-top:0;
+    padding-left:10px;
     margin-top:0;
     font-size: 26pt;
-    margin-left: 7px;
+    text-shadow: none;
 }
 .projSub {
-    width:500px;
-    height: 45px;
+    text-shadow:none;
+    width:475px;
     font-size: 14pt;
-    margin-bottom:15px;
-    margin-left: 7px;
+    padding-left:15px;
+    text-shadow: none;
+}
+.projectHead {
+    border-radius: 5px 5px 0 0; 
+    background-color: #415d5e;
+    width: 500px;
+    display: block;
+    padding-bottom: 16px;
+}
+.projectHead :hover {
+    transform: scale(1);
+    transform-origin: center;
 }
 .thumbnail {
     width:500px;
     height:auto;
-    border-radius: 0px 0px 9px 9px;
-    box-shadow: 2px 2px 9px #0c3030;
+    border-radius: 0px 0px 5px 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;

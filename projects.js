@@ -37,6 +37,10 @@ function listProjects() {
 
         projList.innerHTML += `<li class="projectItem" id="${project.id}"></li>`;
         const projItem = document.querySelector(`#${project.id}`);
-        projItem.innerHTML += titleHTML + subHTML + thumbHTML;
+        projItem.innerHTML += `<a class="projLink" id="${project.id}Link" href="Projects/${project.id}.html"></a>`;
+        const projLink = document.querySelector(`#${project.id}Link`);
+        projLink.innerHTML += `<div class="projectHead" id="${project.id}Head"></div>` + thumbHTML;
+        const projHead = document.querySelector(`#${project.id}Head`);
+        projHead.innerHTML += titleHTML + subHTML;
     });
 }
