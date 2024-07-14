@@ -1,8 +1,4 @@
-main();
-
-function main() {
-    loadProjects(listProjects);
-}
+loadProjects(listProjects);
 
 // List the projects using HTML
 function listProjects(projects) {
@@ -18,6 +14,7 @@ function listProjects(projects) {
             thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`;
         }
 
+        // Creating objects in order of inheritence
         projList.innerHTML += `<li class="projectItem" id="${project.id}Item"></li>`;
         const projItem = document.querySelector(`#${project.id}Item`);
         projItem.innerHTML += `<a class="projLink" id="${project.id}" href="projectViewer.html" onclick="javascript:setProject(this)"></a>`;

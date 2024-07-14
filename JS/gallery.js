@@ -1,9 +1,5 @@
 var images = [];
-main();
-
-function main() {
-    loadImgs();
-}
+loadImgs();
 
 async function loadImgs() {
     // Load the projects from serverside JSON
@@ -12,7 +8,6 @@ async function loadImgs() {
     .then(jsonResponse => {
         images = jsonResponse.images;
         displayImgs(images);
-        console.log(images[2]);
     });
 }
 
