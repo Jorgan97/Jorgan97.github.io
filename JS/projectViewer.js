@@ -18,7 +18,7 @@ function displayProject(projects) {
         thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="viewerCover">`;
     }
     const date = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${project.date}</p>`
-    const body = `<p class="viewerBody">${project.discussion}</p>`;
+    const body = project.discussion;
 
     const page = document.querySelector("#projectViewer");
     page.innerHTML += title + subTitle + date + thumbHTML + body;
