@@ -1,12 +1,8 @@
 async function loadProjects(func) {
-    // Load the projects from serverside JSON
-    fetch("JSON/Projects.json")
-    .then(response => response.json())
-    .then(jsonResponse => {
-        objects = createObjects(jsonResponse);
-        func(objects);
-        return objects;
-    });
+    // Load the projects from server side JSON
+    let response = await fetch("JSON/Projects.json");
+    let objects = createObjects(await response.json());
+    return objects;
 }
 
 // Create an array of project objects, exclude the template object

@@ -1,7 +1,8 @@
 const projectID = sessionStorage.getItem("id");
-loadProjects(displayProject);
+displayProject();
 
-function displayProject(projects) {
+async function displayProject(projects) {
+    projects = await loadProjects();
     let project = null;
     projects.forEach((proj) => {
         if (proj.id == projectID) {

@@ -4,6 +4,7 @@
         <title>Joseph Morgan</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="CSS/styles.css">
+        <script src="JS/JSON.js"></script>
     </head>
     <body>
         <header class="titleBlock">
@@ -40,15 +41,41 @@
                 <div class="resHeader">
                 </div>
                 <div class="resContent">
-                    <a href="projects.html"><h1>Projects</h1></a>
-
-                    <h1>Education</h1>
+                    <a href="projects.html"><h1 style="font-size:52pt; font-weight:200;" class="emailLink">Projects</h1></a>
+                    <table class="projectGallery">
+                        <tr class="projectGalleryRow">
+                            <td class="imageArrow" style="border-radius:5px 0px 0px 5px;" onclick="javascript:previousImage()"><p class="imageArrowText"><</p></td>
+                            <td>
+                                <a href="projectViewer.html" id="imageLink"><img src="images/noImage.png" id="projectGallery"></a>
+                                <p id="projectGalleryTitle">Projects not found</p>
+                            </td>
+                            <td class="imageArrow" style="border-radius:0px 5px 5px 0px;" onclick="javascript:nextImage()"><p class="imageArrowText">></p></td>
+                        </tr>
+                    </table>
+                    <h1 style="font-size:52pt">Work Experience</h1>
                     <ul>
-                        <li><a href="https://ncsu.edu" target="blank">North Carolina State University</a></li>
-                        <li><a href="https://ncssm.edu" target="blank">North Carolina School of Science and Mathematics</a></li>
+                        <li class="resumeLi">
+                            MATLAB Teaching Assistant (NCSU CSC113)
+                            <ul>
+                                <li>Instructs a lab section of an undergraduate MATLAB course on the practical application of new skills</li>
+                            </ul>
+                        </li>
+                        <li class="resumeLi">
+                            Head Sailing Instructor - East Coast Sailboats
+                            <ul>
+                                <li>Collaborated with instructors to teach beginner to intermediate sailing skills to children ages 7-17</li>
+                                <li>Managed risks on and around the water to ensure the safety of students and instructors</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h1 style="font-size:52pt">Education</h1>
+                    <ul>
+                        <li class="resumeLi"><a href="https://ncsu.edu" target="blank">North Carolina State University</a></li>
+                        <li class="resumeLi"><a href="https://ncssm.edu" target="blank">North Carolina School of Science and Mathematics</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </body>
+    <script src="JS/projDisplay.js"></script>
 </html>

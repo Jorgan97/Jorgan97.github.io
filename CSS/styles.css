@@ -53,7 +53,7 @@ a {
     display:block;
 }
 .welcomeTable {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 td {
     padding-right: 60px;
@@ -286,6 +286,48 @@ ul {
 }
 .resContent {
     margin-left:50px;
+}
+#projectGallery {
+    display:block;
+    margin: 0 auto;
+    width:auto;
+    height:400px;
+ }
+ .projectGallery {
+    border-collapse: collapse;
+    display: block;
+    margin: 20px auto;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+ }
+.projectGalleryRow > td {
+    padding: 0;
+    border:none;
+ }
+ .imageArrow  {
+    padding: 0;
+    background-color: #415d5e;
+    text-align: center;
+    width:50px;
+    border:none;
+    cursor:pointer;
+ }
+ .imageArrowText {
+    color: azure;
+    font-weight: bolder;
+    font-size: 20pt;
+    text-shadow: none;
+    margin: auto;
+ }
+.imageArrowText :hover {
+    transform: scale(1.2);
+}
+#projectGalleryTitle {
+    background: rgba(0, 0, 0, 0.1);
+    line-height: 18pt;
+    padding-left: 10px;
+}
+.resumeLi {
+    margin-bottom: 10px;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}

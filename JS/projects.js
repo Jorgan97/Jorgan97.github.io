@@ -1,7 +1,8 @@
-loadProjects(listProjects);
+listProjects();
 
 // List the projects using HTML
-function listProjects(projects) {
+async function listProjects() {
+    const projects = await loadProjects();
     const projList = document.querySelector("#projectList");
     projects.forEach((project) => {
         // Create project content
@@ -14,7 +15,7 @@ function listProjects(projects) {
             thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="thumbnail">`;
         }
 
-        // Creating objects in order of inheritence
+        // Creating objects in order of inheritance
         projList.innerHTML += `<li class="projectItem" id="${project.id}Item"></li>`;
         const projItem = document.querySelector(`#${project.id}Item`);
         projItem.innerHTML += `<a class="projLink" id="${project.id}" href="projectViewer.html" onclick="javascript:setProject(this)"></a>`;
