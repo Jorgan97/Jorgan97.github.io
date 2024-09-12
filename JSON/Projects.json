@@ -30,7 +30,18 @@
         "thumbnail": "floater.jpg",
         "images": [],
         "subprojects": [],
-        "tags": []
+        "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintenance."]
+    },
+    "liftSim": {
+        "id": "liftSim",
+        "title": "2D Aerodynamic Simulation",
+        "subtitle": "Using Euler's method and JavaFX, visually simulates projectile motion with lift and drag forces.",
+        "date" : "Spring, 2023",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": "simulation.png",
+        "images": [],
+        "subprojects": [],
+        "tags": ["Computer science", "Java", "JavaFX", "Programming", "School", "Physics", "Dynamics", "Differential Equations"]
     },
     "template": {
         "id": "",

@@ -12,6 +12,13 @@ async function displayProject(projects) {
     const title = `<h1 class="viewerTitle">${project.title}</h1>`;
     const subTitle = `<h2 class="viewerSub">${project.subtitle}</h2>`;
 
+    const tags = project.tags;
+    let tagHTML = "";
+    tags.forEach(i => {
+        let html = `<p class="tagText">${i}</p>\n`;
+        tagHTML += html;
+    });
+
     let thumbHTML = null;
     if (project.thumbnail.length == 0) {
         thumbHTML = '<img src="images/noImage.png" class="viewerCover">';
@@ -22,5 +29,5 @@ async function displayProject(projects) {
     const body = project.discussion;
 
     const page = document.querySelector("#projectViewer");
-    page.innerHTML += title + subTitle + date + thumbHTML + body;
+    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body;
 }

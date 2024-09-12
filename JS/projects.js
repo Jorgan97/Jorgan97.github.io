@@ -8,6 +8,15 @@ async function listProjects() {
         // Create project content
         const titleHTML = `<p class="projTitle">${project.title}</p>`;
         const subHTML = `<p class="projSub">${project.subtitle}</p>`;
+
+        const tagsHTML = `<span class=\"tags\" id=${project.id}Tags></span>`;
+        const tags = project.tags
+        let tagHTML = "";
+        tags.forEach(i => {
+            let html = `<p class="tagText">${i}</p>\n`;
+            tagHTML += html;
+        });
+
         let thumbHTML = null;
         if (project.thumbnail.length == 0) {
             thumbHTML = '<img src="images/noImage.png" class="thumbnail">';
@@ -20,9 +29,11 @@ async function listProjects() {
         const projItem = document.querySelector(`#${project.id}Item`);
         projItem.innerHTML += `<a class="projLink" id="${project.id}" href="projectViewer.html" onclick="javascript:setProject(this)"></a>`;
         const projLink = document.querySelector(`#${project.id}`);
-        projLink.innerHTML += `<div class="projectHead" id="${project.id}Head"></div>` + thumbHTML;
+        projLink.innerHTML += thumbHTML + `<div class="projectHead" id="${project.id}Head"></div>`;
         const projHead = document.querySelector(`#${project.id}Head`);
-        projHead.innerHTML += titleHTML + subHTML;
+        projHead.innerHTML += titleHTML + subHTML + tagsHTML;
+        const projTags = document.querySelector(`#${project.id}Tags`);
+        projTags.innerHTML += tagHTML;
     });
 }
 
