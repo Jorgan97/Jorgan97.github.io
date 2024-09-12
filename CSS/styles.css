@@ -327,7 +327,7 @@ ul {
  }
  .imageArrow  {
     padding: 0;
-    background-color: #415d5e;
+    background-color: transparent;
     text-align: center;
     width:50px;
     border:none;
@@ -338,13 +338,13 @@ ul {
     font-weight: bolder;
     font-size: 20pt;
     text-shadow: none;
-    margin: auto;
+    padding: 0px 10px 8px 10px;
  }
-.imageArrowText :hover {
-    transform: scale(1.2);
+.imageArrow :hover {
+    background-color: #2525254d;
 }
 #projectGalleryTitle {
-    background: rgba(60, 60, 60, 0.3);
+    background-color: transparent;
     line-height: 18pt;
     padding-left: 10px;
 }
