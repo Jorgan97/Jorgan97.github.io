@@ -314,6 +314,7 @@ ul {
     margin: 0 auto;
     width:auto;
     height:400px;
+    border-radius:5px;
  }
  .projectGallery {
     border-collapse: collapse;

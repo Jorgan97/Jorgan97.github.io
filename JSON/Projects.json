@@ -8,18 +8,18 @@
         "thumbnail": "runner.jpg",
         "images": [],
         "subprojects": [],
-        "tags": ["engineering", "automotive", "fabrication", "overland"]
+        "tags": ["Engineering", "Automotive", "Fabrication", "Overland"]
     },
     "catalina22": {
         "id" : "catalina",
         "title": "'81 Catalina 22 Sailboat",
-        "subtitle": "(WIP) An overnighting cruising sailboat, pruchased with dreams of camping, needed a refresh.",
+        "subtitle": "(WIP) An overnight cruising sailboat, purchased with dreams of camping, needed a refresh.",
         "date" : "July, 2024 - Present",
         "discussion": "<p class=\"viewerBody\">Text</p>",
         "thumbnail": "c22Wing.jpg",
         "images": [],
         "subprojects": [],
-        "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintenance."]
+        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance."]
     },
     "floater": {
         "id": "floater",
@@ -30,7 +30,7 @@
         "thumbnail": "floater.jpg",
         "images": [],
         "subprojects": [],
-        "tags": ["engineering", "marine", "fabrication", "camping", "repairs", "restoration", "maintenance."]
+        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance."]
     },
     "liftSim": {
         "id": "liftSim",
