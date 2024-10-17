@@ -1,0 +1,9 @@
+{
+    "template": {
+        "id": "compressor",
+        "title": "Onboard Air Compressor",
+        "date" : "Spring, 2024",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": "compressorMounted.jpg"
+    }
+}

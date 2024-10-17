@@ -30,4 +30,9 @@ async function displayProject(projects) {
 
     const page = document.querySelector("#projectViewer");
     page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body;
+
+    console.log(project.subProjects == []);
+    if (project.subProjects != []) {
+        console.log("Hello");
+    }
 }
