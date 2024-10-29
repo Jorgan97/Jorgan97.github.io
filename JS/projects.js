@@ -2,7 +2,7 @@ listProjects();
 
 // List the projects using HTML
 async function listProjects() {
-    const projects = await loadProjects();
+    const projects = await loadProjects("JSON/Projects.json");
     const projList = document.querySelector("#projectList");
     projects.forEach((project) => {
         // Create project content

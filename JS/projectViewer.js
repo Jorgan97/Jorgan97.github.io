@@ -1,17 +1,9 @@
-const projectID = sessionStorage.getItem("id");
 displayProject();
 
-async function displayProject(projects) {
-    projects = await loadProjects();
-    let project = null;
-    projects.forEach((proj) => {
-        if (proj.id == projectID) {
-            project = proj
-        }
-    });
+async function displayProject() {
+    const [project, subProjects] = await getThisProject("JSON/Projects.json");
     const title = `<h1 class="viewerTitle">${project.title}</h1>`;
     const subTitle = `<h2 class="viewerSub">${project.subtitle}</h2>`;
-
     const tags = project.tags;
     let tagHTML = "";
     tags.forEach(i => {
@@ -19,20 +11,52 @@ async function displayProject(projects) {
         tagHTML += html;
     });
 
+    const thumbHTML = getThumbnail(project);
+    const date = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${project.date}</p>`
+    const body = project.discussion;
+
+    let subProjectPage = "";
+    subProjects.forEach((subProject) => {
+        const header = `<h2 class="viewerSub"><b>${subProject.title}</b></h2>`;
+        const subDate = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${subProject.date}</p>`
+        const subThumb = getThumbnail(subProject);
+        const discussion = subProject.discussion;
+        subProjectPage += header + subDate + subThumb + discussion;
+    });
+
+    const page = document.querySelector("#projectViewer");
+    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body + subProjectPage;
+}
+
+async function getThisProject(jsonFile) {
+    const projectID = sessionStorage.getItem("id");
+    let projects = await loadProjects(jsonFile);
+    let project = null;
+    projects.forEach((proj) => {
+        if (proj.id == projectID) {
+            project = proj
+        }
+    });
+
+    let subProjects = [];
+    const allSubProjects = await loadProjects("JSON/subProjects.json");
+    allSubProjects.forEach((possibleSubProject) => {
+        project.subProjects.forEach((subProjectID) => {
+            if (possibleSubProject.id == subProjectID) {
+                subProjects.push(possibleSubProject);
+            }
+        });
+    });
+
+    return [project, subProjects];
+}
+
+function getThumbnail(project) {
     let thumbHTML = null;
     if (project.thumbnail.length == 0) {
         thumbHTML = '<img src="images/noImage.png" class="viewerCover">';
     } else {
         thumbHTML = `<img src="ProjectPics/${project.thumbnail}" class="viewerCover">`;
     }
-    const date = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${project.date}</p>`
-    const body = project.discussion;
-
-    const page = document.querySelector("#projectViewer");
-    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body;
-
-    console.log(project.subProjects == []);
-    if (project.subProjects != []) {
-        console.log("Hello");
-    }
+    return thumbHTML;
 }

@@ -1,6 +1,6 @@
-async function loadProjects(func) {
+async function loadProjects(jsonFile) {
     // Load the projects from server side JSON
-    let response = await fetch("JSON/Projects.json");
+    let response = await fetch(jsonFile);
     let objects = createObjects(await response.json());
     return objects;
 }
@@ -9,8 +9,6 @@ async function loadProjects(func) {
 function createObjects(jsonResponse) {
     objects = [];
     let projectKeys = Object.keys(jsonResponse);
-    for (var i = 0; i < projectKeys.length - 1; i++) {
-        objects.push(jsonResponse[projectKeys[i]]);
-    }
+    projectKeys.forEach(key => objects.push(jsonResponse[key]));
     return objects;
 }

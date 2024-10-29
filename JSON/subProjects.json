@@ -1,9 +1,30 @@
 {
-    "template": {
+    "compressor": {
         "id": "compressor",
         "title": "Onboard Air Compressor",
         "date" : "Spring, 2024",
-        "discussion": "<p class=\"viewerBody\"></p>",
+        "discussion": "<p class=\"viewerBody\">We are discussing now hehe</p>",
         "thumbnail": "compressorMounted.jpg"
+    },
+    "suspension": {
+        "id": "suspension",
+        "title": "Suspension Upgrade",
+        "date" : "Summer, 2023",
+        "discussion": "<p class=\"viewerBody\">We are discussing now hehe</p>",
+        "thumbnail": ""
+    },
+    "catRewire": {
+        "id": "catRewire",
+        "title": "Rewiring",
+        "date" : "Summer, 2024",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": ""
+    },
+    "template": {
+        "id": "",
+        "title": "",
+        "date" : "",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": ""
     }
 }

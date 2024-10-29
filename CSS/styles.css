@@ -232,6 +232,11 @@ ul {
     -webkit-line-clamp: unset;
     overflow: visible;
 }
+.projectHead:hover .tags {
+    line-clamp:unset;
+    -webkit-line-clamp: unset;
+    max-height:fit-content;
+}
 .projectHead :hover {
     transform: scale(1);
     transform-origin: center;
@@ -244,7 +249,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
-.tags{
+.tags {
     display: inline-block;
     overflow:hidden;
     max-height:30px;
@@ -319,7 +324,7 @@ ul {
  .projectGallery {
     border-collapse: collapse;
     display: block;
-    margin: 20px auto;
+    margin: 20px 0px 20px -50px;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
  }
 .projectGalleryRow > td {
