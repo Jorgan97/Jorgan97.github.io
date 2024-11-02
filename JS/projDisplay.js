@@ -6,12 +6,12 @@ let imageIndex = 0;
 firstImage();
 
 async function firstImage() {
-    projects = await loadProjects();
+    projects = await loadProjects("JSON/Projects.json");
     displayImage();
 }
 
 async function nextImage() {
-    let projects = await loadProjects();
+    let projects = await loadProjects("JSON/Projects.json");
     let maxProjectIndex = projects.length - 1;
 
     imageIndex++;
@@ -22,7 +22,7 @@ async function nextImage() {
     displayImage();
 }
 async function previousImage() {
-    let projects = await loadProjects();
+    let projects = await loadProjects("JSON/Projects.json");
     let maxProjectIndex = projects.length - 1;
 
     imageIndex--;

@@ -10,5 +10,8 @@ function createObjects(jsonResponse) {
     objects = [];
     let projectKeys = Object.keys(jsonResponse);
     projectKeys.forEach(key => objects.push(jsonResponse[key]));
+
+    // Take all but the last object
+    objects = objects.slice(0, -1);
     return objects;
 }

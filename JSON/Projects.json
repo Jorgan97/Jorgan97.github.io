@@ -19,7 +19,7 @@
         "thumbnail": "c22Wing.jpg",
         "images": [],
         "subProjects": ["catRewire"],
-        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance."]
+        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance"]
     },
     "floater": {
         "id": "floater",
@@ -30,7 +30,7 @@
         "thumbnail": "floater.jpg",
         "images": [],
         "subProjects": [],
-        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance."]
+        "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance"]
     },
     "liftSim": {
         "id": "liftSim",
