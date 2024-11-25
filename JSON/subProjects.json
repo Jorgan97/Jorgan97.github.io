@@ -1,22 +1,29 @@
 {
     "compressor": {
         "id": "compressor",
-        "title": "Onboard Air Compressor",
+        "title": "Onboard Air Compressor V0.1",
         "date" : "Spring, 2024",
-        "discussion": "<p class=\"viewerBody\">We are discussing now hehe</p>",
+        "discussion": "<h3>Introduction</h3><p class=\"viewerBody\">Onboard air is perhaps one of the most convenient upgrades that can be done to a vehicle. From filling tires, to cleaning, blowing up inflatable toys or mattresses, and saving the day in an emergency, compressed air is great tool to have around in many situations. After finding myself in need of air more than a couple of times without a convenient way to get it, I knew this was a project I wanted to take on.</p><p class=\"viewerBody\"><i>Disclaimer: This is not a tutorial. It is only documentation of my project. Attempt similar projects at your own risk!</i></p><h3>Design</h3><p class=\"viewerBody\">Like most DIY projects my general plan for building my onboard air compressor was to create a final product that would last a decently long time without breaking the bank in the way that an off-the-shelf solution might. As a result, options such as the industry standard ARB air compressor systems were all off limits. The compressor alone would have cost more than I have in the project all together. This lead me to what is known as the \"NAPA Air Compressor\" in the Overlanding community.</p><p class=\"viewerBody\">The NAPA air compressor is an overseas-manufactured two cylinder 12-Volt air compressor that is sold under many names from many vendors with varying color schemes and features. These air compressors all have the same construction and as far as I could tell through my research appear to be made in the same factory. I ultimately chose one from Amazon under the branding \"ALL TOP\" because it happened to be cheap at the time. For a few months I used this compressor as it was designed to be used. That is I kept it in the back of the car and connected it to the battery with alligator clips when I wanted to use it. While this was still more convenient than having to use the big compressor at home or going to a gas station, it was still quite the process to get to the point of having air come out whenever I wanted to use it. To get past this, I had to solve the biggest problem of this project.</p><p class=\"viewerBody\">The primary problem to be solved in this project was finding a mounting solution to place the air compressor under the hood of the 4Runner and mounting a manifold for running air lines around the truck and for general management of the air system. Similar projects I found online showed people using spare battery mounting hardware as a base for their compressors. I did not feel that this was the right solution for me because I was using a larger modified compressor.</p><h3>Construction</h3><p class=\"viewerBody\">This is one of my first projects where I have gotten into fabrication. I made parts out of angle aluminum and aluminum sheet metal to produce a lightweight, strong, corrosion resistant solution.</p>",
         "thumbnail": "compressorMounted.jpg"
     },
     "suspension": {
         "id": "suspension",
         "title": "Suspension Upgrade",
         "date" : "Summer, 2023",
-        "discussion": "<p class=\"viewerBody\">We are discussing now hehe</p>",
+        "discussion": "<p class=\"viewerBody\">Write-up coming soon...</p>",
         "thumbnail": ""
     },
     "catRewire": {
         "id": "catRewire",
-        "title": "12 Volt Rewire",
+        "title": "12-Volt System Rewire",
         "date" : "Summer, 2024",
+        "discussion": "<p class=\"viewerBody\">Write-up coming soon...</p>",
+        "thumbnail": ""
+    },
+    "catPopTop": {
+        "id": "catPopTop",
+        "title": "Pop Top Reglass",
+        "date" : "Work in progress...",
         "discussion": "<p class=\"viewerBody\"></p>",
         "thumbnail": ""
     },
