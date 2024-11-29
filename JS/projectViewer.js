@@ -15,9 +15,19 @@ async function displayProject() {
     const date = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${project.date}</p>`
     const body = project.discussion;
 
+    let subProjectContents = "";
+    console.log(subProjects.length)
+    if (subProjects.length != 0) {
+        subProjectContents = "<p class='viewerBody' style='margin-bottom: 5px;'>This project is made up of sub-projects which can be found below.</p><ul class='projectContents'>";
+        subProjects.forEach((subProject) => {
+            subProjectContents += `<li><a class="emailLink" style="font-weight: 400" href="#${subProject.id}"><u>${subProject.title}</u></a></li>`
+        });
+    subProjectContents += '</ul></p>';
+}
+
     let subProjectPage = "";
     subProjects.forEach((subProject) => {
-        const header = `<h2 class="viewerSub"><b>${subProject.title}</b></h2>`;
+        const header = `<h2 class="viewerSub" id="${subProject.id}"><b>${subProject.title}</b></h2>`;
         const subDate = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${subProject.date}</p>`
         const subThumb = getThumbnail(subProject);
         const discussion = subProject.discussion;
@@ -25,7 +35,7 @@ async function displayProject() {
     });
 
     const page = document.querySelector("#projectViewer");
-    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body + subProjectPage;
+    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body + subProjectContents + subProjectPage;
 }
 
 async function getThisProject(jsonFile) {

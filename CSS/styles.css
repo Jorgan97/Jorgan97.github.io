@@ -54,6 +54,7 @@ a {
 }
 .welcomeTable {
     margin-bottom: 100px;
+    border: none;
 }
 td {
     padding-right: 60px;
@@ -92,7 +93,7 @@ h3 {
 }
 h4 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 13pt;
+    font-size: 14pt;
     font-weight: 500;
     color: azure;
     text-shadow: 1px 1px 4px #081f1f;
@@ -106,14 +107,18 @@ ul {
     margin-top:0;
 
 }
-.projTable {
+table, tr, td, th {
+    border: none;
+}
+.projectTable {
     border-collapse: collapse;
     color: azure;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 20px;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    border: 1px solid azure;
 }
-.projTable > tr, td, th {
+.projectTable  > tbody > tr > td, .projectTable > tbody > tr > th {
     border: 1px solid azure;
     padding: 15px;
 }
@@ -391,7 +396,25 @@ ul {
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     margin-bottom: 20px;
 }
-
+.projectContents > li{
+    font-size: 14pt;
+}
+.projectPic {
+    width:400px;
+    height: auto;
+    border-radius: 5px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    margin: 10px 10px;
+}
+.viewerCaption {
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display:inline-block;
+}
+.imagePlusCaption {
+    display: flex;
+}
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 100;}
