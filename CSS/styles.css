@@ -233,7 +233,7 @@ table, tr, td, th {
     font-size: 14pt;
     color: #b0b8b8;
     text-shadow: none;
-    transition: 0.7s;
+    transition: all 0.7s;
     margin-bottom: 8px;
 }
 .projectHead {
@@ -246,7 +246,6 @@ table, tr, td, th {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    transition: 0.7s;
 }
 .projectHead:hover .projSub{
     line-clamp:unset;
@@ -394,6 +393,9 @@ table, tr, td, th {
 }
 .diagram {
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    max-width: 700px;
+    width:90%;
+    height: auto;
     margin-bottom: 20px;
 }
 .projectContents > li{
