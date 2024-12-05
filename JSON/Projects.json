@@ -2,7 +2,7 @@
     "4Runner": {
         "id": "runner",
         "title": "'08 Toyota 4Runner",
-        "subtitle": "(WIP) A practical, reliable, off-road capable, daily driver for beach driving, boat hauling, and more.",
+        "subtitle": "(WIP) A practical, reliable, off-road capable, daily driver for beach driving, boat hauling, and more",
         "date" : "June, 2024 - Present",
         "discussion": "<html>    <p class='viewerBody'>        My first car was a 2001 Mazda Miata, a little convertible I happily drove around for a few years. Its novelty outweighed its drawbacks for a time; however, eventually I found myself in need of something more practical. Late in the summer of 2022, in a search for a vehicle more closely matching my lifestyle, I purchased a stock 2008 Toyota 4Runner 4WD SR5 4.0L V6 in Shadow Mica Grey.    </p>    <p class='viewerBody'>        Even stock, this mid-sized SUV carried a \"get it done\" attitude that I loved. Being four-wheel-drive, the 4Runner is capable of adventures in a multitude of environments ranging from the soft sands of the Outer Banks to the rocky trails of who-knows-where. With that said, the 4Runner is still a sort of \"family-car\" so it needed some modification to match the functionality and style I was after. This also presented a chance to practice some engineering skills.    </p>    </html>",
         "thumbnail": "runner.jpg",
@@ -12,7 +12,7 @@
     "catalina22": {
         "id" : "catalina",
         "title": "'81 Catalina 22 Sailboat",
-        "subtitle": "(WIP) An overnight cruising sailboat, purchased with dreams of camping, needed a refresh.",
+        "subtitle": "(WIP) An overnight cruising sailboat, purchased with dreams of camping, needed a refresh",
         "date" : "July, 2024 - Present",
         "discussion": "<p class=\"viewerBody\">Text</p>",
         "thumbnail": "c22Wing.jpg",
@@ -32,12 +32,22 @@
     "liftSim": {
         "id": "liftSim",
         "title": "2D Aerodynamic Simulation",
-        "subtitle": "Using Euler's method and JavaFX, visually simulates projectile motion with lift and drag forces.",
+        "subtitle": "Using Euler's method and JavaFX, visually simulates projectile motion with lift and drag forces",
         "date" : "Spring, 2023",
         "discussion": "<p class=\"viewerBody\"></p>",
         "thumbnail": "simulation.png",
         "subProjects": [],
         "tags": ["Computer science", "Java", "JavaFX", "Programming", "School", "Physics", "Dynamics", "Differential Equations"]
+    },
+    "backpackGuitar": {
+        "id": "backpackGuitar",
+        "title": "Acoustic-Electric Camping Guitar",
+        "subtitle": "A small form-factor versatile guitar for traveling and camping",
+        "date" : "Summer, 2020",
+        "discussion": "<p class=\"viewerBody\">Placeholder</p>",
+        "thumbnail": "",
+        "subProjects": [],
+        "tags": ["Woodworking", "Electronics", "Music", "Fabrication", "Design"]
     },
     "template": {
         "id": "",

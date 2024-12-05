@@ -18,7 +18,7 @@ async function displayProject() {
     let subProjectContents = "";
     console.log(subProjects.length)
     if (subProjects.length != 0) {
-        subProjectContents = "<p class='viewerBody' style='margin-bottom: 5px;'>This project is made up of sub-projects which can be found below.</p><ul class='projectContents'>";
+        subProjectContents = "<p class='viewerBody' style='margin-bottom: 5px;'>This project is made up of sub-projects:</p><ul class='projectContents'>";
         subProjects.forEach((subProject) => {
             subProjectContents += `<li><a class="emailLink" style="font-weight: 400" href="#${subProject.id}"><u>${subProject.title}</u></a></li>`
         });
