@@ -41,9 +41,9 @@ async function listProjects() {
     seeMore.innerHTML += `<a class='projLink' id='seeMoreLink' href='projects.html'></a>`;
     const seeMoreLink = document.querySelector('#seeMoreLink');
     seeMoreLink.innerHTML += `<img class='thumbnail' style='auto'src='ProjectPics/seeMoreThum.png'>`;
-    seeMoreLink.innerHTML += `<div class='projectHead' id='seeMoreButton'></div>`;
-    const seeMoreButton = document.querySelector('#seeMoreButton');
-    seeMoreButton.innerHTML += `<h2 id='SeeMoreButton' style='margin-bottom:40px;'>See More ></h2>`
+    seeMoreLink.innerHTML += `<div class='projectHead' id='seeMoreDiv'></div>`;
+    const seeMoreDiv = document.querySelector('#seeMoreDiv');
+    seeMoreDiv.innerHTML += `<h2 id='seeMoreButton'>See More ></h2>`
 }
 
 function setProject(arg) {

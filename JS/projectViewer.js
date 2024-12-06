@@ -27,7 +27,7 @@ async function displayProject() {
 
     let subProjectPage = "";
     subProjects.forEach((subProject) => {
-        const header = `<h2 class="viewerSub" id="${subProject.id}"><b>${subProject.title}</b></h2>`;
+        const header = `<h2 style='margin-top:80px' class="viewerSub" id="${subProject.id}"><b>${subProject.title}</b></h2>`;
         const subDate = `<p style="font-size: 14pt; font-style:italic; margin-bottom: 10px">${subProject.date}</p>`
         const subThumb = getThumbnail(subProject);
         const discussion = subProject.discussion;

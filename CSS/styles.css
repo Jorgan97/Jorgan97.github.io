@@ -6,9 +6,10 @@ body {
 li {
     list-style: none;
 }
-body::-webkit-scrollbar {
-    display: none;  /* for Chrome*/
+/*body::-webkit-scrollbar {
+    display: none;  /* for Chrome ////////
 }
+*/
 a {
     text-decoration: none;
     color:azure;
@@ -247,7 +248,7 @@ table, tr, td, th {
     margin-right: auto;
     overflow: hidden;
 }
-.projectHead:hover .projSub{
+/*.projectHead:hover .projSub{
     line-clamp:unset;
     -webkit-line-clamp: unset;
     overflow: visible;
@@ -256,7 +257,7 @@ table, tr, td, th {
     line-clamp:unset;
     -webkit-line-clamp: unset;
     overflow: visible;
-}
+}*/
 .projectHead:hover .tags {
     line-clamp:unset;
     -webkit-line-clamp: unset;
@@ -422,7 +423,10 @@ table, tr, td, th {
     display: flex;
     margin: 0px 0px 20px 0px;
 }
-#SeeMoreButton {
+#seeMoreDiv {
+    height: 125px;
+}
+#seeMoreButton {
     border-radius: 5px;;
     padding: 10px;
     color:#0b4747;
