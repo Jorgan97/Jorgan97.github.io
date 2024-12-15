@@ -45,17 +45,17 @@
         "subtitle": "A small form-factor versatile guitar for traveling and camping",
         "date" : "Summer, 2020",
         "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
-        "thumbnail": "",
+        "thumbnail": "miniGuitarThumb.jpg",
         "subProjects": [],
         "tags": ["Woodworking", "Electronics", "Music", "Fabrication", "Design"]
     },
     "bucket": {
         "id": "bucket",
-        "title": "Waterproof Fabric Bucket",
+        "title": "Waterproof Textile Bucket",
         "subtitle": "A fabric bucket designed to hold several gallons of water without leaking",
         "date" : "Spring, 2024",
         "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
-        "thumbnail": "",
+        "thumbnail": "bucketThumb.jpg",
         "subProjects": [],
         "tags": ["Engineering", "School", "Textiles", "Lamination", "Statics", "Design"]
     },

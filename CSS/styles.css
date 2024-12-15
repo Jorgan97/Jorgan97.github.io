@@ -423,16 +423,20 @@ table, tr, td, th {
     display: flex;
     margin: 0px 0px 20px 0px;
 }
-#seeMoreDiv {
-    height: 125px;
-}
 #seeMoreButton {
     border-radius: 5px;;
-    padding: 10px;
     color:#0b4747;
     background-color: azure;
     text-shadow: none;
     text-align: center;
+    font-size: 18pt;
+    font-weight: 500;
+}
+#seeMoreDiv {
+    height:124px;
+}
+.someProjLink {
+    height: 465px;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}

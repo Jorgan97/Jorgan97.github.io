@@ -27,12 +27,16 @@ async function listProjects() {
         // Creating objects in order of inheritance
         projList.innerHTML += `<li class="projectItem" id="${project.id}Item"></li>`;
         const projItem = document.querySelector(`#${project.id}Item`);
+
         projItem.innerHTML += `<a class="projLink" id="${project.id}" href="projectViewer.html" onclick="javascript:setProject(this)"></a>`;
         const projLink = document.querySelector(`#${project.id}`);
+
         projLink.innerHTML += thumbHTML + `<div class="projectHead" id="${project.id}Head"></div>`;
         const projHead = document.querySelector(`#${project.id}Head`);
+
         projHead.innerHTML += titleHTML + subHTML + tagsHTML;
         const projTags = document.querySelector(`#${project.id}Tags`);
+        
         projTags.innerHTML += tagHTML;
     });
 }
