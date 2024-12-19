@@ -14,9 +14,9 @@
         "title": "'81 Catalina 22 Sailboat",
         "subtitle": "(WIP) An overnight cruising sailboat, purchased with dreams of camping, needed a refresh",
         "date" : "July, 2024 - Present",
-        "discussion": "<p class=\"viewerBody\">Text</p>",
+        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
         "thumbnail": "c22Wing.jpg",
-        "subProjects": ["catRewire", "catPopTop"],
+        "subProjects": ["catRewire", "catPopTop", "rigging"],
         "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance", "12V Electrical"]
     },
     "floater": {
@@ -34,7 +34,7 @@
         "title": "2D Aerodynamic Simulation",
         "subtitle": "Using Euler's method and JavaFX, visually simulates projectile motion with lift and drag forces",
         "date" : "Spring, 2023",
-        "discussion": "<p class=\"viewerBody\"></p>",
+        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
         "thumbnail": "simulation.png",
         "subProjects": [],
         "tags": ["Computer science", "Java", "JavaFX", "Programming", "School", "Physics", "Dynamics", "Differential Equations"]
