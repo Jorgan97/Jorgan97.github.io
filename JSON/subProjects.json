@@ -33,6 +33,13 @@
         "discussion": "<p class=\"viewerBody\"></p>",
         "thumbnail": ""
     },
+    "topSideRefresh": {
+        "id": "topSideRefresh",
+        "title": "Top Side Refresh",
+        "date" : "Work in progress...",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": ""
+    },
     "template": {
         "id": "",
         "title": "",
