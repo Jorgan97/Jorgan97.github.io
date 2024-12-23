@@ -5,3 +5,4 @@ Hover: #205772
 Text Shadow: #081f1f
 Img Shadow: #0c3030
 Proj Heading: #415d5e
+Subtitle: #b0b8b8;

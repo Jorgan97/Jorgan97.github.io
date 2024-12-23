@@ -438,6 +438,11 @@ table, tr, td, th {
 .someProjLink {
     height: 465px;
 }
+.subProjectCount {
+    font-weight: 200;
+    color: #b0b8b8;
+    display: inline;
+}
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 100;}

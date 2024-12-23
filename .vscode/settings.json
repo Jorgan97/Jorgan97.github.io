@@ -4,6 +4,7 @@
         "jpsi",
         "Matplotlib",
         "numpy",
-        "roading"
+        "roading",
+        "subprojects"
     ]
 }
