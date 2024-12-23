@@ -9,6 +9,12 @@ async function listProjects() {
         const titleHTML = `<p class="projTitle">${project.title}</p>`;
         const subHTML = `<p class="projSub">${project.subtitle}</p>`;
 
+        const subProjCount = project.subProjects.length;
+        let subProjCountHTML = '';
+        if (subProjCount > 0) {
+            subProjCountHTML = `<p class='subProjectCount'>${subProjCount} Subprojects</p>`;
+        }
+
         const tagsHTML = `<span class=\"tags\" id=${project.id}Tags></span>`;
         const tags = project.tags
         let tagHTML = "";
@@ -34,7 +40,7 @@ async function listProjects() {
         projLink.innerHTML += thumbHTML + `<div class="projectHead" id="${project.id}Head"></div>`;
         const projHead = document.querySelector(`#${project.id}Head`);
 
-        projHead.innerHTML += titleHTML + subHTML + tagsHTML;
+        projHead.innerHTML += titleHTML + subProjCountHTML + subHTML + tagsHTML;
         const projTags = document.querySelector(`#${project.id}Tags`);
         
         projTags.innerHTML += tagHTML;
