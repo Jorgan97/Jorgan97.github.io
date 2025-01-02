@@ -1,53 +1,43 @@
 <html>
     <link rel="stylesheet" href="../CSS/styles.css">
     <div class="content" id="projectViewer">
-        <p>The Computational Physics course at the North Carolina School of Science and Math (NCSSM) is a collaboration between the physics and computer science departments. While taking the course I modeled various physics problems in mechanics, electricity and magnetism, and quantum mechanics. For the final project, I was tasked with expanding a previous project or concept of my choice, with approval from the instructor. I chose to expand a previous project where I modeled simple frisbee flight.</p>
-        <h3>Overview</h3>
-        <p style='margin-bottom:5px;'>Building on previous code (discussed below), this project is visually simulates the un-powered flight of an aerodynamic object with tunable aerodynamic parameters.</p>
-        <img src='../ProjectPics/simDemo.jpg' class='thumbnail' style='margin-bottom:30px;'>
-        <h4>Toolbar</h4>
-        <p>The simulation is controlled from the toolbar by adjusting various parameters pertaining to launch conditions and object properties.</p>
-        <img src='../ProjectPics/launchParams.jpg' style='border-radius:5px; width:90%; max-width:500px; height:auto'>
-        <p>Projectile launch parameters in toolbar</p>
-        <img src='../ProjectPics/objectProps.png' style='border-radius:5px; width:60%; max-width:400px; height:auto'>
-        <p>Aerodynamic tuning controls and object preset selection in toolbar</p>
-        <img src='../ProjectPics/simControls.jpg' style='border-radius:5px; width:70%; max-width:400px; height:auto'>
-        <p>Simulation controls in toolbar including (from left to right) step-backward, play, pause, step-froward, reset, and scale adjustment</p>
-        <h4>Information Bar</h4>
-        <p style='margin-bottom:5px'>The information displays data that can be valuable in tuning an object, especially when used in conjunction with experimental data. This data can also be used to evaluate the performance of the simulation.</p>
-        <img src='../ProjectPics/infoBar.jpg' style='border-radius:5px; width:35%; max-width:300px; height:auto'>
-        <h3>Results</h3>
-        <p>The final simulation is fully functional and can be used to estimate values such as the coefficients of lift and drag as well as zero-lift angles of attack. Below is a graph showing a tuned frisbee simulation along side data collected from the actual flight of a frisbee.</p>
-        <img src='../ProjectPics/realAndSim.jpg' class='thumbnail' style='margin-bottom:20px;'>
-        <p>The limitations of this simulation are that it can be difficult to tune more than a few parameters. Furthermore, even after tuning, the model does not take into account the spin of and object like a frisbee.</p>
-        <p style='margin-bottom:5px'>Having gained a greater understanding of how lift and drag can be can be calculated and applied to an object from my coursework in aerospace engineering, there are a few changes I would make to the physics of the simulation were I to develop in further:</p>
+        <h3>Introduction</h3>
+        <p>Rigging is everything on a sailboat. It factors into the performance of the boat as well as conformability. In my discussions with the previous owner, I was pleased to learn that the standing rigging had been replaced recently along with a few pieces of running rigging such as the mainsheet and halyards. Despite this, there was still much to address in regard to rigging.</p>
+        <h3>Headsail Downhaul/Spinnaker Tack-Line</h3>
+        <p>Inspired by <a class='emailLink' style='font-weight:200' target='none' href='https://stingysailor.com/2023/03/25/headsail-downhaul-solution-2/'><u>The Stingy Sailor</u></a>, my first addition to the rigging of this boat was a double-duty headsail downhaul (white line with red tracer below).</p>
+        <img style='margin-bottom:20px; border-radius:5px; width:60%; max-width:600px; height:auto;' src='../ProjectPics/bowPic.jpg'>
+        <h4>Outline</h4>
+        <p style='margin-bottom:5px;'>The purpose of this line is to allow a jib/genoa to be pulled down from the cockpit. This is helpful in a couple of ways:</p>
         <ul class='projectUl'>
-            <li>Set the change in coefficient of lift per degree angle of attack to an accepted approximation of 0.11 1/degrees to eliminate a parameter</li>
-            <li>Calculate the coefficient of drag as a function of coefficient of lift rather than one of angle of attack to reduce parameters</li>
-            <li>Calculate the drag force using a formula that better applies to this use-case</li>
-            <li>Implement a system that rotates the object as it glides to ensure accurate angles of attack (the current implementation has the object with a small constant pitch angle above horizontal)</li>
+            <li>Easier singlehand sailing</li>
+            <li>Crew does not have to go forward to reduce sail (especially handy in heavy conditions)</li>
         </ul>
-        <h3>Pre-existing Code</h3>
-        <p>Through previous projects, there was an abundance of experience and code to build off of, with my instructor's approval.</p>
-        <h4>Projectile Motion Visual Simulation</h4>
-        <p style='margin-bottom:5px'>In a previous course at NCSSM called Procedural and Object Oriented Programming, I built a simple projectile motion simulation in JavaFX. This program had several features:</p>
+        <p>In addition to these benefits as a downhaul, the system can work as an adjustable tack-line for a spinnaker sail.</p>
+        <h4>Function</h4>
+        <p>The downhaul is run through a turning block shackled to the stem fitting and the lead aft to the cockpit through fairleads, where it terminates in a jam cleat.</p>
+        <p style='margin-bottom:5px;'>To douse a sail with the downhaul...</p>
         <ul class='projectUl'>
-            <li>Euler's Method based projectile motion simulation with GUI using 'delta time' in JavaFX animation engine</li>
-            <li>Pause, play, step-forward, step-backward, and reset simulation control buttons</li>
-            <li>Launch velocity input control</li>
-            <li>Visual scale adjustment control</li>
+            <li>Turn the bow into the wind</li>
+            <li>Release the headsail halyard</li>
+            <li>Keeping slight tension on the halyard, pull the downhaul through the cleat</li>
+            <li>When conditions allow, contain/stow the headsail</li>
         </ul>
-        <img src='../ProjectPics/projectileSim.png' class='thumbnail' style='margin-bottom:30px;'>
-        <h4>Frisbee Modeling</h4>
-        <p style='margin-bottom:5px'>For the first project in Computational Physics, with a partner, I modeled the flight of a frisbee by adding lift and drag forces to the Euler's Method models previously practiced in class. I made sure to include several factors in the model:</p>
+        <p style='margin-bottom:5px;'>To hoist a sail with the downhaul...</p>
         <ul class='projectUl'>
-            <li>Coefficient of lift as a function of angle of attack</li>
-            <li>Coefficient of drag as a function of angle of attack</li>
-            <li>All calculations of forces, accelerations, velocities, positions, performed using vectors</li>
+            <li>Turn the bow into the wind</li>
+            <li>Coil the downhaul such that it can feed through its cleat</li>
+            <li>Uncleat the downhaul</li>
+            <li>Hoist the headsail with the halyard as usual</li>
+            <li>Take most of the slack out of downhaul; do not pull tight</li>
         </ul>
-        <img src='../ProjectPics/frisbeeGraph.jpg' class='thumbnail' style='margin-bottom:5px;'>
-        <p>Trajectory simulated by Python code</p>
-        <img src='../ProjectPics/frisbeeFlight.jpg' class='thumbnail' style='margin-bottom:5px;'>
-        <p>Trajectory plotted from frisbee video analysis</p>
+        <h4>Future Improvements</h4>
+        <p style='margin-bottom:5px;'>After using this system many times, there are a few improvements to be made:</p>
+        <ul class='projectUl'>
+            <li>Relocate turning block to reduce clutter and allow for Catalina Direct Anchor Roller</li>
+            <li>Replace jam cleat with a cam cleat to make hosting easier</li>
+            <li>Add a fairlead to reduce gelcoat wear at a specific point</li>
+        </ul>
+        <h3>Other Rigging Upgrades</h3>
+        <p>There are other rigging upgrades in progress. Check back later to see the results! In the meantime, <a href='../blog.html#mainsheetControlsBlog'><u>updates will be posted on my blog.</u></a></p>
     </div>
 </html>

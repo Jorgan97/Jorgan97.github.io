@@ -23,7 +23,7 @@ async function displayProject() {
             subProjectContents += `<li><a class="emailLink" style="font-weight: 400" href="#${subProject.id}"><u>${subProject.title}</u></a></li>`
         });
     subProjectContents += '</ul></p>';
-}
+    }
 
     let subProjectPage = "";
     subProjects.forEach((subProject) => {
@@ -34,8 +34,10 @@ async function displayProject() {
         subProjectPage += header + subDate + subThumb + discussion;
     });
 
+    const backBtnHTML = "<a style='width:fit-content; padding:5px; font-size:14pt; height:fit-content' class='btn' href='projects.html'><b>Back To Projects</b></a>"
+
     const page = document.querySelector("#projectViewer");
-    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body + subProjectContents + subProjectPage;
+    page.innerHTML += title + subTitle + tagHTML + date + thumbHTML + body + subProjectContents + subProjectPage + backBtnHTML;
 }
 
 async function getThisProject(jsonFile) {
