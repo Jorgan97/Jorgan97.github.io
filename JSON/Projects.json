@@ -16,7 +16,7 @@
         "date" : "July, 2024 - Present",
         "discussion": "<p class=\"viewerBody\">Sailing is one of my all time favorite hobbies. I loved it enough that for seven summers I worked as a sailing instructor. Between my time sailing on the <a href='https://www.sailpack.org/' target='none' class='emailLink' style='font-weight:200'><u>NC State Sailing Team</u></a> and the boats I was exposed to through my work, most of my experience with sailing has been in dinghy racing. Recently, however, a new opportunity was presented to purchase a 1981 Catalina 22 Swing Keel.</p><p class='viewerBody'>After going for a sail with the owner and noticing some defects, I was able to talk the price down some, and once the weather was right, I sailed home with a brand new-to-me sailboat. Of course now the aforementioned defects had to be addressed.</p>",
         "thumbnail": "c22Wing.jpg",
-        "subProjects": ["catRewire", "rigging", "catPopTop", "topSideRefresh"],
+        "subProjects": ["catRewire", "rigging", "topSideRefresh"],
         "tags": ["Engineering", "Marine", "Fabrication", "Camping", "Repairs", "Restoration", "Maintenance", "12V Electrical"]
     },
     "floater": {
