@@ -1,0 +1,22 @@
+{
+"bucket": {
+        "id": "bucket",
+        "title": "Waterproof Textile Bucket",
+        "subtitle": "A fabric bucket designed to hold several gallons of water without leaking",
+        "date" : "Spring, 2024",
+        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
+        "thumbnail": "bucketThumb.jpg",
+        "subProjects": [],
+        "tags": ["Engineering", "School", "Textiles", "Lamination", "Statics", "Design"]
+    },
+    "jpsi": {
+        "id": "jpsi",
+        "title": "J/Ψ Meson Mass Derivation",
+        "subtitle": "Using CERN data and the conservation of momentum, the mass of sub-atomic particles can be determined",
+        "date" : "Spring, 2023",
+        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
+        "thumbnail": "collider.jpg",
+        "subProjects": [],
+        "tags": [ "School", "Computer science", "Python", "Jupyter Notebook", "Matplotlib", "numpy", "Physics"]
+    }
+}

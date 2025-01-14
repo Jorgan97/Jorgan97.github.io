@@ -5,10 +5,12 @@
         "jpsi",
         "Matplotlib",
         "numpy",
+        "Pickgaurd",
         "roading",
         "singlehand",
         "subproject",
         "subprojects",
+        "Thinline",
         "Uncleat"
     ]
 }

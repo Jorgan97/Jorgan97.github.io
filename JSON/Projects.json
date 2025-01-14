@@ -44,30 +44,10 @@
         "title": "Acoustic-Electric Camping Guitar",
         "subtitle": "A small form-factor versatile guitar for traveling and camping",
         "date" : "Summer, 2020",
-        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
+        "discussion": "<p>Playing guitar and singing are two of my favorite hobbies. Since I share this passion with my father, I'm fortunate to have access to several guitars. However, as any guitarist knows, the right number of guitars to own is always “one more than you currently have.” With limited funds and a unique use case, the guitar I wanted wasn't easy to find. After falling deep into a guitar building YouTube rabbit-hole, I set out to design and build my own.</p>        <h3>Overview</h3>        <p style='margin-bottom:5px'>This guitar is intended to be a small form factor versatile instrument. It can be played as an acoustic or electric guitar or both, and it works well in combination with a miniature amp. Features include...</p>        <ul class='projectUl'>            <li>Electric Guitar Humbucker Pickup</li>            <li>Acoustic-Electric Guitar Piezo Disk Pickup</li>            <li>Hollow body construction</li>            <li>3-way selector switch for acoustic/both/electric</li>        </ul>        <img src='../ProjectPics/fullGuitar1.jpg' style='margin:10px;; border-radius:5px; width:40%; max-width:400px; height:auto;'>        <h3 style='margin-bottom:10px'>Design and Construction</h3>            <img src='../ProjectPics/backpackerDesign.png' style='margin:10px;; border-radius:5px; width:60%; max-width:600px; height:auto;'>            <p style='margin-bottom:5px;'>This guitar is designed and constructed in a similar fashion a Fender Thinline Telecaster with similar design elements such as...</p>            <ul class='projectUl'>                <li>Body constructed from hollowed out poplar blank</li>                <li>Pickgaurd containing electronics wired separately, then dropped in</li>                <li>Bolt-on neck</li>            </ul>            <img src='../ProjectPics/guitarBlank1.jpg' style='margin:10px;; border-radius:5px; width:40%; max-width:400px; height:auto;'>            <img src='../ProjectPics/guitarBlank2.jpg' style='margin:10px;; border-radius:5px; width:40%; max-width:400px; height:auto;'>            <img src='../ProjectPics/pickgaurd1.jpg' style='margin:10px;; border-radius:5px; width:40%; max-width:400px; height:auto;'>            <p>After hollowing the body, a spruce top is glued over the body cavity. This is a departure from the Telecaster inspiration and instead resembles an acoustic guitar top. Appropriate cutouts are then made for the sound hole and neck pocket.</p>            <img src='../ProjectPics/guitarTop1.jpg' style='margin-bottom:20px; border-radius:5px; width:40%; max-width:400px; height:auto;'><p></p>",
         "thumbnail": "miniGuitarThumb.jpg",
         "subProjects": [],
         "tags": ["Woodworking", "Electronics", "Music", "Fabrication", "Design"]
-    },
-    "bucket": {
-        "id": "bucket",
-        "title": "Waterproof Textile Bucket",
-        "subtitle": "A fabric bucket designed to hold several gallons of water without leaking",
-        "date" : "Spring, 2024",
-        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
-        "thumbnail": "bucketThumb.jpg",
-        "subProjects": [],
-        "tags": ["Engineering", "School", "Textiles", "Lamination", "Statics", "Design"]
-    },
-    "jpsi": {
-        "id": "jpsi",
-        "title": "J/Ψ Meson Mass Derivation",
-        "subtitle": "Using CERN data and the conservation of momentum, the mass of sub-atomic particles can be determined",
-        "date" : "Spring, 2023",
-        "discussion": "<p class=\"viewerBody\">This page is under construction</p>",
-        "thumbnail": "collider.jpg",
-        "subProjects": [],
-        "tags": [ "School", "Computer science", "Python", "Jupyter Notebook", "Matplotlib", "numpy", "Physics"]
     },
     "template": {
         "id": "",
