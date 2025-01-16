@@ -18,5 +18,12 @@
         "thumbnail": "collider.jpg",
         "subProjects": [],
         "tags": [ "School", "Computer science", "Python", "Jupyter Notebook", "Matplotlib", "numpy", "Physics"]
+    },
+    "topSideRefresh": {
+        "id": "topSideRefresh",
+        "title": "Top Side Refresh (WIP)",
+        "date" : "Summer, 2024",
+        "discussion": "<p class=\"viewerBody\"></p>",
+        "thumbnail": "CribBoards.jpg"
     }
 }
