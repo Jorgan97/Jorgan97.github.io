@@ -442,7 +442,7 @@ table, tr, td, th {
     margin-bottom:20px;
 }
 .blogListing {
-    border: 0.25px, rgba(240, 255, 255, 0.308), solid;
+    border: 1px, rgba(240, 255, 255, 0.308), solid;
     border-radius:3px;
     padding:20px;
     text-align:left;
@@ -454,7 +454,7 @@ table, tr, td, th {
     justify-content: center;
 }
 .contentsContent {
-    border: 0.25px, rgba(240, 255, 255, 0.308), solid;
+    border: 1px, rgba(240, 255, 255, 0.308), solid;
     border-radius:3px;
     padding: 10px;
     text-align: left;
@@ -463,7 +463,7 @@ table, tr, td, th {
     margin-bottom: 12px;
 }
 .listings {
-    width:50%
+    width:60%
 }
 .lookUp > h3 {
     margin-top:0px;
